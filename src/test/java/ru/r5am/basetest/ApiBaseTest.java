@@ -39,7 +39,6 @@ public class ApiBaseTest extends AbstractTestNGSpringContextTests {
     /**
      * Создать кодированный токен для Basic аутентификации
      * @param name Имя пользователя
-     * @return password Пароль пользователя
      */
     protected void basicTokenMake(String name, String password) {
         basicToken = new String(Base64.getEncoder().encode(String.format("%s:%s", name, password).getBytes()));
