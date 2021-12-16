@@ -4,6 +4,8 @@ import lombok.Getter;
 import lombok.Setter;
 import java.util.List;
 import java.io.IOException;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Component;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import ru.r5am.utils.YamlProcessing;
@@ -11,6 +13,8 @@ import ru.r5am.utils.YamlProcessing;
 /**
  * Тестовый стенд
  */
+@Slf4j
+@Component
 public class Stand {
 
     @Setter @Getter public String name;

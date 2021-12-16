@@ -1,0 +1,14 @@
+
+# Серверы
+servers:
+  # Имя тестового стенда
+  testStand: "StandN1"
+
+# Файлы с данными
+dataFiles:
+  standDataFilePath: "data/stand_1/stands.yml"
+
+# Люди
+people:
+  # Фамилия тестового клиента, участвующего в тестах
+  client: "Автотестюк"
