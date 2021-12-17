@@ -1,0 +1,13 @@
+﻿<qa:environment xmlns:qa="urn:model.commons.qatools.yandex.ru">
+    <name>R5AM</name>
+    <parameter>
+        <name>Team</name>
+        <key>Команда</key>
+        <value>Суперкоманда</value>
+    </parameter>
+    <parameter>
+        <name>Jenkins</name>
+        <key>Дженкинс</key>
+        <value>https://jenkins.ru/job/</value>
+    </parameter>
+</qa:environment>

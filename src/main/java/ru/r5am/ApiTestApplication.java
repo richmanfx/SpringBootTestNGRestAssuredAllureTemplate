@@ -1,4 +1,4 @@
-﻿package ru.r5am;
+package ru.r5am;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.SpringApplication;

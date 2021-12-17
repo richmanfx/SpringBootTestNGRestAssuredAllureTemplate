@@ -1,4 +1,4 @@
-﻿package ru.r5am;
+package ru.r5am;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
