@@ -36,7 +36,7 @@ public class SmokeStand extends ApiBaseTest {
 
     @Test
     @Description("Проверка доступности стенда")
-    public void standAvialabilityCheck() {
+    public void standAvailabilityCheck() {
         log.info("\n\nStart method: {}", Thread.currentThread().getStackTrace()[1].getMethodName());
         log.info("Stand URI: {}", restRequest.getBaseUri());
         allureReport.message(String.format("Стенд URI: %s", restRequest.getBaseUri()));
