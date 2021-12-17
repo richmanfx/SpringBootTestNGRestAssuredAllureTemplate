@@ -21,6 +21,7 @@ import java.io.IOException;
 @Owner("Ящук Александр Юрьевич")
 public class SmokeStand extends ApiBaseTest {
 
+    String basePath = "ololo";
     @Autowired private Stand stand;
     @Autowired private RestRequest restRequest;
     @Value("${servers.testStand}") String standName;
@@ -32,6 +33,13 @@ public class SmokeStand extends ApiBaseTest {
         stand.get(standName, standsDataFilePath);
         standUri = "http://" + stand.url + ":" + stand.port;
         log.info("{}", stand);
+    }
+
+    @BeforeClass
+    @Description("Подготовка спецификации запроса")
+    public void requestSpecificationMake() {
+        log.debug("\n\nStart method: {}", Thread.currentThread().getStackTrace()[1].getMethodName());
+        requestSpecification = restRequest.requestSpecificationMake(cookies, standUri, basePath);
     }
 
     @Test

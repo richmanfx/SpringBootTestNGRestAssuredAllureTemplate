@@ -2,11 +2,12 @@
 # Серверы
 servers:
   # Имя тестового стенда
-  testStand: "StandN1"
+  testStand: "Stand_N1"
 
 # Файлы с данными
 dataFiles:
-  standDataFilePath: "data/stand_1/stands.yml"
+  standsDataFilePath: "data/stand_1/stands.yaml"
+  clientsDataFilePath: "data/stand_1/clients.yaml"
 
 # Люди
 people:
